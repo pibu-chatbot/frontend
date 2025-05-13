@@ -40,9 +40,11 @@ def get_intro_style(base64_logo):
         border: none;
         border-radius: 25px;
         cursor: pointer;
-        width: 200px;
-        display: flex; 
+        width: 200px; important! 
         justify-content: center;
+        position: absolute;    
+        top: -150px;            
+        left: 250px;          
     }}
     div.stButton > button:hover {{
         background-color: white;
