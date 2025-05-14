@@ -5,7 +5,7 @@
     <title>Piboo-chat</title>
     <style>
     body {
-        margin: 0; padding: 0; background: #f6f6f6;
+        margin: 0; padding: 0; 
         font-family: 'Albert Sans', sans-serif;
     }
     .phone-frame {
@@ -43,7 +43,7 @@
     }
     .send-btn {
         background: #ffb3c1; color: #fff; border: none; border-radius: 10px;
-        width: 40px; height: 35px; font-size: 15px; font-weight: 700;
+        width: 40px; height: 35px; font-size: 13px; font-weight: 700;
         cursor: pointer; display: flex; align-items: center; justify-content: center;
         transition: background 0.2s; box-sizing: border-box;
     }
@@ -57,12 +57,12 @@
 <body>
     <div class="phone-frame">
         <div class="logo-area">
-            <img src="data:image/png;base64,{logo_base64}" class="logo-img" alt="Piboo Logo">
+            <img src="data:image/png;base64,LOGO_BASE64_PLACEHOLDER" class="logo-img" alt="Piboo Logo">
         </div>
         <div class="chat-area" id="chat-area"></div>
         <div class="input-area">
            <div class="input-container">
-                <input type="text" class="input-box" id="user-input" placeholder="메시지를 입력하세요..." autocomplete="off"/>
+                <input type="text" class="input-box" id="user-input" placeholder="" autocomplete="off"/>
                 <button class="send-btn" id="send-btn">Send</button>
             </div>
         </div>
