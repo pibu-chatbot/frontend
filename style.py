@@ -56,6 +56,6 @@ def get_intro_style(base64_logo):
     <div class="phone">
         <div>
             <img src="data:image/png;base64,{base64_logo}" class="logo" />
-            <div class="brand">Piboo</div>
+            <div class="brand">PiBoo</div>
         </div>
     """

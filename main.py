@@ -4,7 +4,7 @@ from style import get_intro_style
 
 # 1. 페이지 설정
 st.set_page_config(
-    page_title="Piboo",
+    page_title="PiBoo",
     page_icon="🌸",
     layout="centered",
     initial_sidebar_state="collapsed"
