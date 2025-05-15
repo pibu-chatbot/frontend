@@ -16,7 +16,7 @@ def get_base64_image(img_path):
 logo_base64 = get_base64_image("intro.png")
 
 # HTML 파일 읽기
-with open("./pages/ui.html", "r", encoding="utf-8") as f:
+with open("./style/ui.html", "r", encoding="utf-8") as f:
     html_code = f.read()
 
 # 플레이스홀더 치환
