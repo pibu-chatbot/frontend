@@ -75,14 +75,25 @@
         let messages = [];
 
         function renderMessages() {
-            chatArea.innerHTML = "";
-            for (const msg of messages) {
-                const div = document.createElement("div");
-                div.className = "message-bubble " + (msg.role === "user" ? "user-message" : "bot-message");
-                div.textContent = msg.content;
-                chatArea.appendChild(div);
-            }
-            chatArea.scrollTop = chatArea.scrollHeight;
+            function formatContent(str) {
+            const escaped = str
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
+
+            return escaped
+                .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+                .replace(/\n/g, "<br>");
+        }
+
+        chatArea.innerHTML = "";
+        for (const msg of messages) {
+            const div = document.createElement("div");
+            div.className = "message-bubble " + (msg.role === "user" ? "user-message" : "bot-message");
+            div.innerHTML = formatContent(msg.content);
+            chatArea.appendChild(div);
+        }
+        chatArea.scrollTop = chatArea.scrollHeight;
         }
 
         async function sendMessage() {
