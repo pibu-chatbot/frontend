@@ -2,7 +2,12 @@ import streamlit as st
 import streamlit.components.v1 as components
 import base64
 
-st.set_page_config(page_title="Piboo-chat", page_icon="🌸", layout="centered")
+st.set_page_config(
+    page_title="PiBoo", 
+    page_icon="🌸", 
+    layout="centered",
+    initial_sidebar_state="collapsed"
+)
 
 def get_base64_image(img_path):
     with open(img_path, "rb") as f:
