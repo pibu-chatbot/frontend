@@ -4,8 +4,8 @@ def get_intro_style(base64_logo):
     @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@800&display=swap');
 
     .phone {{
-        width: 480px;
-        height: 853px;
+        width: 320px;
+        height: 640px;
         margin: 50px auto;
         border-radius: 40px;
         background-color: #f9f9f9;
@@ -19,14 +19,14 @@ def get_intro_style(base64_logo):
         text-align: center;
     }}
     .logo {{
-        width: 200px;
+        width: 120px;
         height: auto;
         margin-top: 80px;
     }}
     .brand {{
         font-family: 'Albert Sans', sans-serif;
         font-weight: 800;
-        font-size: 50px;
+        font-size: 40px;
         color: #ff3b5c;
         margin-top: 20px;
     }}
@@ -40,11 +40,11 @@ def get_intro_style(base64_logo):
         border: none;
         border-radius: 25px;
         cursor: pointer;
-        width: 250px; important! 
+        width: 200px; important! 
         justify-content: center;
         position: absolute;    
         top: -150px;            
-        left: 225px;          
+        left: 250px;          
     }}
     div.stButton > button:hover {{
         background-color: white;
