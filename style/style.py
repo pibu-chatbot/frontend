@@ -40,9 +40,11 @@ def get_intro_style(base64_logo):
         border: none;
         border-radius: 25px;
         cursor: pointer;
-        width: 200px;
-        display: flex; 
+        width: 200px; important! 
         justify-content: center;
+        position: absolute;    
+        top: -150px;            
+        left: 250px;          
     }}
     div.stButton > button:hover {{
         background-color: white;
@@ -54,6 +56,6 @@ def get_intro_style(base64_logo):
     <div class="phone">
         <div>
             <img src="data:image/png;base64,{base64_logo}" class="logo" />
-            <div class="brand">Piboo</div>
+            <div class="brand">PiBoo</div>
         </div>
     """
